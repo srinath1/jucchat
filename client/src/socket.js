@@ -1,6 +1,6 @@
 import { io } from "socket.io-client";
 
-const URL = process.env.REACT_APP_SOCKET;
+const URL = https://jucchat.herokuapp.com/;
 
 const socket = io(URL, {
   path: "/socket.io",
