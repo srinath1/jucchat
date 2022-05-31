@@ -21,6 +21,7 @@ const io = require("socket.io")(http, {
 app.use(cors());
 app.use(express.json({ limit: "5mb" }));
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static('client/build'))
 
 // rest api
 app.get("/api", (req, res) => {
