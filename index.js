@@ -11,7 +11,7 @@ const http = require("http").createServer(app);
 const io = require("socket.io")(http, {
   path: "/socket.io",
   cors: {
-    origin: [process.env.DOMAIN],
+    origin: "https://jucchat.herokuapp.com/",
     methods: ["GET", "POST"],
     allowedHeaders: ["content-type"],
   },
